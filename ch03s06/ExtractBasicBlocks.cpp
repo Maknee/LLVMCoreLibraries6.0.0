@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
   const Module::FunctionListType& basic_blocks = module->get()->getFunctionList();
   for (const Function& basic_block : basic_blocks) {
     if(!basic_block.isDeclaration()) {
-      llvm::outs() << basic_block.getName() << " has " << basic_block.size() << "basic blocks \n";
+      llvm::outs() << basic_block.getName() << " has " << basic_block.size() << " basic blocks\n";
     }
   }
 
